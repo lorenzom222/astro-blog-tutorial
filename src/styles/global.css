@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html {
+  @apply bg-slate-100 font-sans;
+}
+
+body {
+  @apply mx-auto w-full max-w-prose p-4 leading-relaxed;
+}
+
+* {
+  @apply box-border;
+}
+
+h1 {
+  @apply my-4 text-4xl;
+}
+
+/* Restore list styles removed by Tailwind's Preflight */
+ul {
+  @apply list-disc list-inside;
+}
+

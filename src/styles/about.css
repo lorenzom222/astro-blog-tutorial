@@ -1,0 +1,10 @@
+/* About page specific styles using Tailwind */
+@import "tailwindcss";
+
+.about-title {
+  @apply text-purple-600 text-7xl;
+}
+
+.skill {
+  @apply text-[crimson] font-bold italic;
+}
