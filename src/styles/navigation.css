@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* nav styles */
+.menu {
+  @apply bg-[#0d0950] border-none text-white text-xl font-bold py-1 px-2.5;
+}
+
+.nav-links {
+  @apply w-full hidden m-0;
+}
+
+/* Show nav when menu is expanded */
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+
+.nav-links a {
+  @apply block text-center py-2.5 no-underline text-xl font-bold uppercase text-[#0d0950];
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  @apply bg-[#ff9776];
+}
+
+/* Show nav when menu is expanded */
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    @apply ml-20 block static w-auto bg-transparent;
+  }
+
+  .nav-links a {
+    @apply inline-block py-4 px-5;
+  }
+
+  .menu {
+    display: none;
+  }
+}
