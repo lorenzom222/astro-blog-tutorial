@@ -1,9 +1,10 @@
 ---
 import "../styles/social.css";
-
 const { platform, username } = Astro.props;
 ---
 
-<a class="social-link" href={`https://www.${platform}.com/${username}`}
-  >{platform}</a
->
+<a class="social-link" href={`https://www.${platform}.com/${username}`}>
+  <!-- This is where <img> lands -->
+  <slot />
+  <span class="hidden min-[636px]:inline">{platform}</span>
+</a>

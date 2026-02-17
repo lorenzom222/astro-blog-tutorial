@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
 .social-link {
-  @apply py-2 px-4 text-white bg-purple-900 no-underline;
+  /* Use inline-flex to keep buttons side-by-side */
+  /* items-center centers the image and text vertically */
+  /* gap-2 provides space between the icon and text */
+  @apply inline-flex items-center justify-center gap-2;
+  @apply py-2 px-4 text-white bg-purple-900 no-underline rounded;
+}
+
+/* Target images inside the social-link */
+.social-link img {
+  /* h-[1em] makes the image the exact height of the text */
+  /* rendering-pixelated keeps your pixel art sharp */
+  @apply h-[3em] w-auto antialiased;
+  image-rendering: pixelated;
+}
+
+
+/* Mobile adjustments (below 636px) */
+@media screen and (max-width: 635px) {
+  .social-link {
+    /* Make them look like uniform square-ish icon buttons */
+    @apply p-3 min-w-[3rem]; 
+  }
+  
+  .social-link img {
+    /* Slightly bigger icons since there is no text */
+    @apply h-[2em];
+  }
 }

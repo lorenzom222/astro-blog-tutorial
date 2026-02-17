@@ -25,7 +25,7 @@ tags: ["astro", "blogging", "learning in public"]
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 
       Day 1. Trying to just rely on just documentations and crash course (mb
-      some reddit/stack overflor). Main reason for doing this is bc as AI as
-      been so promient within my workspace, I still want to ensure that i can
+      some reddit/stack overflow). Main reason for doing this is bc as AI as
+      been so promient within my work day to day, I still want to ensure that i can
       maintain my learning capabilities and sharpen myself. Also, programming is
       the funnest part tons. So I want to challenge myself a bit.
